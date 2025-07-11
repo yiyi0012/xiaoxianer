@@ -1,0 +1,202 @@
+/* 头尾各个页面相同的样式 */
+/* 版心 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+.shortcut{
+    height: 52px;
+    background-color: #333333;
+}
+.shortcut .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    /* background-color: pink; */
+}
+.shortcut ul{
+    display: flex;
+    
+    line-height: 52px;
+    
+}
+.shortcut li a{
+    padding: 0 15px;
+    border-right:1px solid rgba(153,153,153,1);
+    font-size: 14px;
+    color: #fff;
+}
+.shortcut li:nth-child(7) a{
+    border-right: 0;
+}
+.shortcut li .iconfont{
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.shortcut li:first-child a{
+    color: #5EB69C;
+}
+.header{
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 88px;
+    /* background-color: pink; */
+}
+.header ul{
+    line-height: 88px;
+    display: flex;
+    margin-left: 41px;
+}
+.header ul li{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #333333;
+    margin-right: 47px;
+}
+.header ul li:nth-child(2) a{
+    padding-bottom: 10px;
+    color: #5EB69C;
+    border-bottom: 2px solid#5EB69C;
+}
+.nav ul a:hover{
+    color: #5EB69C;
+}
+.header .log .img{
+    width: 200px;
+    height: 88px;
+}
+.header .nav{
+    display: flex;
+
+}
+.search span{
+    font-size: 18px;
+    color: #ccc;
+    line-height: 37px;
+}
+.search input{
+    /* 浏览器会默认认定input的宽度 */
+    margin-left: 20px;
+    width: 0;
+    line-height: 37px;
+    flex: 1;
+    font-size: 16px;
+}
+.search{
+    display: flex;
+    margin-top: 29px;
+    margin-right: 45px;
+    width: 170px;
+    height: 37px;
+    border-bottom: 2px solid #F4F4F4 ;
+}
+.header .shpocar a{
+    line-height: 88px;
+    font-size: 24px;
+}
+.footer{
+    height: 580px;
+    background-color: #F5F5F5;
+}
+/* 服务 */
+.service{
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #000;
+    
+}
+/* 帮助中心 */
+.help{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    height: 302px;
+    /* background-color: pink; */
+}
+.footer .service ul{
+    justify-content: space-evenly;
+}
+.footer .service ul,
+.footer .service ul li{
+    display: flex;
+    
+}
+.footer .service p{
+    line-height: 58px;
+    font-size: 28px;
+    margin-right: 96px;
+    margin-left: 20px;
+}
+.footer .service li:nth-child(4) p{
+    margin-right: 0;
+}
+.footer .service h5{
+    width: 58px;
+    height: 58px;
+    background: url(./images/sprite.png);
+}
+.service li:nth-child(2) h5{
+    background-position: 0 -58px;
+} 
+.service li:nth-child(3) h5{
+    background-position: 0 -116px;
+} 
+.service li:nth-child(4) h5{
+    background-position: 0 -174px;
+} 
+.help .left{
+    display: flex;
+    
+}
+.help .left dl{
+    margin-right: 84px;
+}
+.help .left dl:last-child{
+    margin-right: 0;
+}
+
+.help .left dt{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.help .left dd{
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.left a{
+    color: #969696 ;
+    font-size: 16px;
+    font-weight: 400;
+}
+.icon-customer-service{
+    color: #5EB69C;
+}
+.right ul{
+    display: flex;
+}
+.help .right ul li:first-child{
+    margin-right: 55px;
+}
+.help .right ul .pic{
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+}
+.right ul .service p{
+    font-size: 16px;
+    color: #969696;
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 10px;
+    color: #969696;
+}
+.copyright p a{
+    margin: 0 10px;
+    color: #969696;
+}

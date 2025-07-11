@@ -1,0 +1,233 @@
+/* 首页内容的样式 */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-color: pink;
+    overflow: hidden;
+}
+.banner .pic{
+    display: flex;
+    width: 3720px;
+}
+.subnav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.42);
+}
+.subnav li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 29px;
+    padding-right: 12px;
+    height: 50px;
+    /* background-color: pink; */
+    line-height: 50px;
+    color: #fff;
+}
+.subnav li a{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+.subnav li .classify{
+    font-size: 16px;
+    margin-right: 14px;
+}
+.subnav li .iconfont{
+    font-size: 14px;
+}
+.subnav li:hover{
+    background-color: #00BE9A;
+    cursor: pointer;
+}
+.banner ol{
+    display: flex;
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+}
+.banner ol li{
+    cursor: pointer;
+    margin-left: 8px;
+    width: 22px;
+    height: 22px;
+    /* background-color: pink; */
+    border-radius: 50%;
+}
+.banner ol i{
+    /* i是行内标签加宽高不生效 */
+    display: block;
+    margin: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+.banner ol .current{
+    background-color: rgb(255,255,255,0.5);
+}
+.banner ol .current i{
+    background-color: #fff;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 42px;
+    /* background-color: pink; */
+}
+.title .left{
+    display: flex;
+}
+.title .left h3{
+    margin-right: 35px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.title .left p{
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+.title .right .more{
+    line-height: 42px;
+    color: #A1A1A1;
+}
+.title .right .more .iconfont{
+    margin-left: 10px;
+}
+/* 好物内容--公共样式 */
+.bd ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bd li {
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+
+}
+.bd li .pic{
+    width: 304px;
+    height: 304px;
+}
+.bd li .txt{
+    text-align: center;
+}
+.bd li h4{
+    margin-top: 18px;
+    margin-bottom: 8.5px;
+    font-size: 20px;
+}
+.bd li p{
+    font-size: 22px;
+    color: #AA2113;
+}
+.fresh .title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.title .right{
+    display: flex;
+}
+.title .right ul{
+    margin-right: 38px; 
+    margin-top: 10px;
+}
+.title .right ul a{
+    display: block;
+    padding: 0 7px;
+    margin-left: 6px;
+    height: 22.5px;
+    line-height: 22.5px;
+
+}
+.title .right ul .active{
+    background-color: #00BE9A;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .left{
+    width: 248px;
+    height: 600px;
+}
+.content .right{
+    width: 968px;
+    height: 610px;
+    /* background-color: pink; */
+}
+.content .right ul{
+    flex-wrap: wrap;
+}
+.content .right li{
+    position: relative;
+    /* 为了隐藏绿色cover */
+    overflow: hidden;
+    padding: 10px 21px;
+    width: 242px;
+    height: 305px;
+    /* border: 2px solid #00BE9A ; */
+}
+/* 产品内容 */
+.content .pic{
+    width: 200px;
+    height: 180px;
+}
+.content .introduction{
+    margin-top: 14px;
+    margin-bottom: 5px;
+    height: 60px;
+    line-height: 19px;
+}
+.content .price{
+    color: #AF2F22;
+}
+.content .price span{
+    font-size: 22px;
+}
+/* 产品底部绿色区域 */
+.content li .cover{
+    position: absolute;
+    padding-top: 15px;
+    left: 0;
+    /* bottom: 0; */
+    bottom: -90px;
+    width: 242px;
+    height: 84px;
+    background-color: #00BE9A;
+    text-align: center;
+    color: #fff;
+}
+.content li .cover p:first-child{
+    font-size: 18px;
+}
+.content li .cover p:nth-child(2){
+    margin: 3px auto 6px;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.11);
+}
+.content li .cover p:nth-child(3){
+    font-size: 13px;
+}
+.content li .cover p:nth-child(3) .iconfont{
+    font-size: 13px;
+}
+/* 当鼠标悬停li时候 */
+.content .right li:hover .cover{
+    bottom: 0;
+    transition: all 1s;
+}
+.content .right li:hover{
+    border: 2px solid #00BE9A;
+}
